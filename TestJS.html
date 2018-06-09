@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<title>TestJS</title>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+
+		function valid() {
+			var sex = $('input[name="sex"]:checked').val();
+			var msg = $('#message');
+			if (!sex) {
+				msg.empty();
+				return msg.html("<font style = 'color: red'>Choose your sex<font><br />");
+				}
+			else {
+				msg.hide();
+				}
+				alert(sex);
+		}
+
+			
+		
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<form>
+			<label for="female">Женский</label>
+			<input type="radio" id="female" name="sex" value="female" />
+			<label for="male">Мужской</label>
+			<input type="radio" id="male" name="sex" value="male" />
+			<br><br>
+			<span id="message"></span>
+			<input type="button" id="done" value="Готово" onclick="valid()">
+
+
+		</form>
+		
+
+
+
+	</body>
+
+</html>

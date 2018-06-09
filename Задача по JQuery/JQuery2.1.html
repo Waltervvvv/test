@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+	<html>
+		
+		<head>
+			<title>Задача по JQuery</title>
+			
+
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript">
+				
+				$(document).ready(function () {
+						
+					marg = $(".test").css("margin-top");
+
+					setInterval(function () {
+					$(".test").animate({
+					"margin-top":"100px",
+					}, 1000)
+					$(".test").animate({
+						"margin-top":marg,
+				}, 1000);
+
+				
+
+				});
+					});
+				
+											
+			</script>
+
+			
+
+		</head>
+
+		<body>
+				
+			<div class = "test" style="width: 100px; height: 100px; border: black solid 1px; background-color: #abc; margin: 0 auto"></div>
+
+		</body>
+
+	</html>
+

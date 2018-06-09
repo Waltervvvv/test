@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+	<html>
+		
+		<head>
+			<title>Login</title>
+			<link href="style.css" rel="stylesheet" type="text/css"> 
+		</head>
+
+		<body>
+				<div class="outer">		
+					<div class="inner">
+						
+						<form action="http://example.com/app/profile.php" method="post">
+							
+							<div class = "login">
+								<input id = "login" onfocus="this.style.borderColor ='black'" onfocusout="this.style.borderColor = ''; validation(this)" name="login" type="text" class="input" placeholder="Логин">
+								<img id = "img2" src="https://cdn.icon-icons.com/icons2/894/PNG/512/Tick_Mark_Circle_icon-icons.com_69145.png">
+							</div>
+				
+							<br><br>
+
+							<div class = "pass">		
+        						<input id = "pass" class = "password"  onfocus="this.style.borderColor ='black'" onfocusout="this.style.borderColor = ''; validation(this)" name="password" type="password" class="input" placeholder="Пароль">
+        						<img id = "img1" src="https://cdn.icon-icons.com/icons2/894/PNG/512/Tick_Mark_Circle_icon-icons.com_69145.png">
+        					</div>
+
+        					<br><br>
+
+         					<input id = "submit" onclick="confirmation();" class = "enter" type="button" class="sub" value="Вход" />
+
+         					<br><br>
+
+        					<div class = "number">
+        						<input id = "nubmer1" type="number"> <br><br>
+        						<input id = "number2" type="number"><br><br>
+        					</div>
+
+        					<input id = "sum" onclick="summm();" class = "enter" type="button" value="Сумма" />
+
+         				</form>
+
+					</div>			
+				</div>
+
+
+			<script type="text/javascript">
+				
+				function validation(y) {
+					var length = y.value;
+					var x = length.length;
+
+					if (x<3) {
+						y.style.borderColor = "red";
+					}
+					else {
+						y.style.borderColor = "green";
+					}
+					}
+
+				function confirmation() {
+					var msg;
+					var cnf = confirm('Точно войти? Может не надо? Ты шо, рисковый?');
+					
+					if (cnf === true) {
+						alert("мразь.");
+						document.getElementById('img1').style = "display: block";
+						document.getElementById('img2').style = "display: block";
+						}
+
+					else {
+						document.getElementById('img1').style = "display: none";
+						document.getElementById('img2').style = "display: none";
+						}		
+										
+				}
+
+				function summm() {
+					var num1 = parseInt(document.getElementById('nubmer1').value);
+					var num2 = parseInt(document.getElementById('number2').value);
+					var sum = num1 + num2;
+					alert(sum);	
+				}
+
+				
+				
+			</script>
+
+
+
+
+		</body>
+
+	</html>
+
