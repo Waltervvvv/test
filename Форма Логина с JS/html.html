@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>JS</title>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ 		integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  		crossorigin="anonymous"></script>
+
+		
+
+		<div id="test" onmouseover="this.style.color ='red';" onmouseleave="this.style.color ='black';">Hello world</div>
+
+		<!-- <a href="#" onclick="this.style.color ='red';" ondblclick="this.style.color ='blue';">Change color</a> -->
+		
+		<a href="#" onmouseover="document.getElementById('test').style.color ='red';" onmouseleave="document.getElementById('test').style.color ='black';">Change color</a>
+
+		<script type="text/javascript">
+			var b = 1;
+			c = b + 2;
+			
+			/*
+			if (confirm('xuj?')) {
+				alert ('ti xuj');
+			} else
+			alert ('ti NE xuj');
+			*/
+
+			function a(){
+				div = document.getElementById('test');
+				div.style.color ='red';
+			}
+
+		</script>
+
+	</body>
+</html>

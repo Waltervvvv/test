@@ -1,0 +1,38 @@
+.inner {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15%;
+}
+
+.login {
+	float: left;
+	margin-top: 5px;
+}
+
+.pass {
+	float: left;
+	margin-top: 5px;	
+}
+
+.enter {
+	margin-right: 45%;
+}
+
+.enter:hover {
+	transform: scale(1.2, 1.2);
+	color: blue;
+}
+
+.number {
+	margin-right: 45%;
+}
+
+img {
+	float: right;
+	width: 20px;
+	height: 25px;
+	margin-left: 5px;
+	display: none;
+	margin-top: -4px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+	<html>
+		
+		<head>
+			<title>Задача по JQuery</title>
+			
+
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript">
+				
+					
+
+				$(document).ready(function () {
+
+
+					function moveit () {
+						$(".test").css({
+							"top": "",
+							"bottom": "",
+							"left": "",
+							"right": "",
+							})
+						
+						
+							$(".test").animate({
+								"right": "10px",
+							}, 1000);
+							$(".test").animate({
+								"bottom": "10px",
+							}, 1000);
+							$(".test").animate({
+								"left": "0",
+							}, 1000);
+							$(".test").animate({
+								"top": "0",
+							}, 1000);
+						};
+
+
+					//$(".test").on('click', moveit());
+					
+					$(".test").click(function () {
+
+						moveit();
+						setInterval(moveit, 5000);
+
+
+
+						
+					
+					});	
+
+				});
+
+
+
+					
+
+				
+
+
+					
+
+					
+					
+				
+
+					
+
+					
+							
+				/*	$(".test").click(setTimeout(function {}) {
+						$(".test").animate({
+							"right": "10px",
+						}, 4000);
+						$(".test").animate({
+							"bottom": "10px",
+						}, 4000);
+						$(".test").animate({
+							"left": "10px",
+						}, 4000);
+						$(".test").animate({
+							"top": "10px",
+						}, 4000);
+					});*/
+
+					/*$(".test").click(function () {
+						$(".test").animate({
+							"right": "10px",
+						}, 4000);
+						$(".test").animate({
+							"bottom": "10px",
+						}, 4000);
+						$(".test").animate({
+							"left": "10px",
+						}, 4000);
+						$(".test").animate({
+							"top": "10px",
+						}, 4000);*/
+					
+
+
+				
+				
+											
+			</script>
+
+		</head>
+
+		<body>
+				
+			<div class = "outer" style="position: relative; border: solid black 2px; height: 600px">
+			<div class = "test" style="width: 100px; height: 100px; border: black solid 1px; background-color: #abc; margin-top: 10px; margin-left: 10px; position: absolute;"></div></div>
+
+		</body>
+
+	</html>
+

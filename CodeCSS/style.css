@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+}
+
+div.head {
+	background-color: #e28722;
+	height: 5%;
+	line-height: 30px;	
+	}
+	
+div.body {
+	background-color: black;
+	height: 95%;
+	}	
+	
+p.head {
+	color: white;
+	font-weight: bold;
+	margin-left: 5px;
+	}
+	
+p.body {
+	margin-left: 10px;
+	margin-top: -7px;
+	}
+	
+span.yellow {
+	color: #b1ae7b;
+}
+	
+span.white {
+	color: white;
+}
+
+span.blue {
+	color: #887e86;
+}
+
+span.red {
+	color: #b6716a;
+}
+
