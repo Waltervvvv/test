@@ -1,2 +1,3 @@
-"New file text" 
-"New text line 2" 
+"new text line" 
+"new text line 2" 
+"new text line 3" 
